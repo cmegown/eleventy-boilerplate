@@ -2,4 +2,4 @@
 
 To get started:
 
-* to do
+* `npx @11ty/eleventy --serve`
