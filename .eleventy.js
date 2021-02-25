@@ -1,12 +1,6 @@
-module.exports = config => {
-  config.addCollection('posts', collection => {
-    return [...collection.getFilteredByGlob('./src/posts/*.md')].reverse();
-  });
-
+module.exports = (config) => {
   return {
-    dataTemplateEngine: 'njk',
-    htmlTemplateEngine: 'njk',
-    markdownTemplateEngine: 'njk',
+    pathPrefix: '/eleventy-boilerplate/',
     dir: {
       input: 'src',
       output: 'dist'
